@@ -102,7 +102,7 @@ class ArrastrarSoltar {
        var correcto = 1;
         var imagenes = document.getElementsByClassName("imagen");
         for(var i=0; i<imagenes.length; i++){
-            var element = imagenes[i].getAttribute("name");
+            var element = imagenes[i].getAttribute("alt");
             var container = imagenes[i].parentNode.getAttribute("id");
             if (container != "container") {
                 if (element != container) {
